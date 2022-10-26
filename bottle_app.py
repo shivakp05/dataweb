@@ -9,11 +9,11 @@ def hello_world():
 
 @route('/hi')
 def hi_world():
-    return 'Hello from shivakp!'
+    return 'Hi from shivakp!'
 
 @route('/bye')
 def bye_world():
-  return 'Bye from shivakp!'
+    return 'Bye from shivakp!'
 
 @route('/list')
 def get_list():
@@ -21,7 +21,7 @@ def get_list():
     rows = cursor.execute("select id, description from list")
     rows = list(rows)
     rows = [ {'id':row[0] ,'desc':row[1]} for row in rows ]
-  return template("shopping_list.tpl", name="shivakp", shopping_list=rows)
+    return template("shopping_list.tpl", name="shivakp", shopping_list=rows)
 
 @get('/add')
 def get_add():
