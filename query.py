@@ -9,6 +9,6 @@ rows = list(rows)
 
 print(rows)
 
-rows = [ {'id':row[0] ,'desc':row[1]} for row in rows ] 
+rows = [ {'id':row[0] ,'desc':row[1]} for row in rows ]
 
 print(rows)

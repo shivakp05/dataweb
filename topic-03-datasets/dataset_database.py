@@ -1,5 +1,4 @@
 # database.py - functions for managing database
-
 import dataset
 
 db = dataset.connect('sqlite:///shopping_list.db')

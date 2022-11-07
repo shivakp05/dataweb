@@ -18,6 +18,11 @@ cursor.execute("insert into list (description) values ('broccoli')")
 cursor.execute("insert into list (description) values ('pizza')")
 cursor.execute("insert into list (description) values ('tangerine')")
 cursor.execute("insert into list (description) values ('potatoes')")
+cursor.execute("insert into list (description) values ('eggs')")
+cursor.execute("insert into list (description) values ('Avocaddo')")
+cursor.execute("insert into list (description) values ('coke')")
+cursor.execute("insert into list (description) values ('laptop')")
+
 
 connection.commit()
 connection.close()
