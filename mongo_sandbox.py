@@ -1,5 +1,11 @@
 from pymongo import MongoClient
-client = MongoClient()
+
+import json
+with open("/home/shivakp/kent/dataweb/private.json","r") as f:
+    private = json.load(f)
+
+password = private["mongo"]
+client = MongoClient(f"mongodb+srv://shiva9596:{password}@soliton0.att3pbv.mongodb.net/?retryWrites=true&w=majority")
 
 from bson.objectid import ObjectId
 
